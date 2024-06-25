@@ -43,6 +43,7 @@ const Login = () => {
       } else {
         console.log("invalid");
         setValid(true);
+        localStorage.removeItem("currUser");
       }
     },
   });
